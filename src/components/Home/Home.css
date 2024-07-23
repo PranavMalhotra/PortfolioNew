@@ -271,19 +271,36 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .linkedin-icon,
   .github-icon,
   .document-icon,
   .contact-icon {
     margin-top: 15px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: left; 
   }
 
   .linkedin-icon a,
   .github-icon a,
   .document-icon a,
   .contact-icon button {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .linkedin-icon a,
+  .github-icon a{
+    margin-right: 15px;
+  }
+
+  .icon-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 
   .hero-content {
@@ -291,7 +308,14 @@ body {
   }
 
   .profile-picture {
-    margin: 0;
+    height: 150px;
+    width: 150px;
+  }
+  .text-content h1 {
+    font-size: 3.5rem;
+    margin-top: 20px;
+    color: #e2e2e2ba;
+    font-family: "Caveat", cursive;
   }
 
   .text-content {
@@ -301,5 +325,36 @@ body {
 
   .btn {
     margin-bottom: 20px;
+  }
+  
+
+  .popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background-color: rgb(221, 221, 221);
+    opacity: 1;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup h3 {
+    margin-top: 0;
   }
 }
