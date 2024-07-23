@@ -1,0 +1,305 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(400%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-400%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(400%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(-400%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #131313;
+  width: 100%;
+  border: 8px solid #5d5c5c;
+  border-top: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  border: 2px solid #e0b700;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.linkedin-icon,
+.github-icon,
+.document-icon,
+.contact-icon {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-icon{
+  animation: slideIn 1s forwards;  
+}
+.linkedin-icon{
+  animation: slideOut 1s forwards;
+}
+.document-icon{
+  animation: slideLeft 1s forwards;
+}
+.contact-icon{
+  animation: slideRight 1s forwards;
+}
+
+.linkedin-icon a,
+.github-icon a,
+.document-icon a,
+.contact-icon button {
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-icon a:hover,
+.github-icon a:hover,
+.document-icon a:hover,
+.contact-icon button:hover {
+  transform: scale(1.1);
+}
+
+.linkedin-icon a {
+  color: #e2e2e2ba;
+}
+
+.linkedin-icon a:hover {
+  color: #005582;
+}
+
+.github-icon a {
+  color: #e2e2e2ba; 
+}
+
+.github-icon a:hover {
+  color: #6e5494;
+}
+
+.document-icon a {
+  color: #e2e2e2ba;
+}
+
+.document-icon a:hover{
+  color: #ffffff
+}
+.contact-icon button:hover {
+  color: #ef805e;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.text-content {
+  text-align: center;
+  animation: slideIn 1s forwards;
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 4.5rem;
+  margin-top: 20px;
+  color: #e2e2e2ba;
+  font-family: "Caveat", cursive;
+}
+
+.text-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: rgb(104, 104, 104);
+  margin: 0;
+  font-family: "Exo 2";
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.btn,
+.close-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #434343;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid #434343;
+  background-color: rgb(134, 134, 134);
+  width: 200px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn:hover,
+.close-btn:hover {
+  background-color: #717171;
+}
+
+.why-hire-me {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 800px;
+}
+
+.why-hire-me h2 {
+  font-size: 3rem;
+  color: #e2e2e2ba;
+  font-family: "Caveat", cursive;
+  margin-bottom: 20px;
+}
+
+.why-hire-me p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: rgb(104, 104, 104);
+  font-family: "Exo 2";
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: rgb(221, 221, 221);
+  padding: 4%;
+  opacity: 1;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup h3 {
+  margin-top: 0;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon button {
+  background: none;
+  border: none;     
+  cursor: pointer;  
+  color: #e2e2e2ba;   
+  padding: 0;     
+}
+
+@media (max-width: 768px) {
+  .linkedin-icon,
+  .github-icon,
+  .document-icon,
+  .contact-icon {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .linkedin-icon a,
+  .github-icon a,
+  .document-icon a,
+  .contact-icon button {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .profile-picture {
+    margin: 0;
+  }
+
+  .text-content {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+}
