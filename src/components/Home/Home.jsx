@@ -19,12 +19,12 @@ const Home = () => {
       </div>
       <div className="icon-row">
         <div className="icon-wrapper document-icon">
-          <a href="/Portfolio/Pranav_Malhotra_Resume.pdf" download>
+          <a href="/PortfolioNew/Pranav_Malhotra_Resume.pdf" download>
             <i className="fa-solid fa-file-lines fa-3x"></i>
           </a>
         </div>
         <div className="profile-picture">
-          <img src="/Portfolio/IMG_6789.png" alt="Profile Picture of Pranav" />
+          <img src="/PortfolioNew/IMG_6789.png" alt="Profile Picture of Pranav" />
         </div>
         <div className="icon-wrapper contact-icon">
           <button onClick={togglePopup}>
