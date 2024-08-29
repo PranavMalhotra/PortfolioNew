@@ -28,7 +28,7 @@ const Home = () => {
         </div>
         <div className="icon-wrapper contact-icon">
           <button onClick={togglePopup}>
-            <i className="fas fa-address-card fa-3x"></i>
+            <i className="fa-solid fa-id-badge fa-3x"></i>
           </button>
         </div>
       </div>

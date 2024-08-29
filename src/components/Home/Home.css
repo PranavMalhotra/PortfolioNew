@@ -291,11 +291,6 @@ body {
     padding: 10px;
   }
 
-  .linkedin-icon a,
-  .github-icon a{
-    margin-right: 15px;
-  }
-
   .icon-row {
     display: flex;
     justify-content: center;
@@ -310,9 +305,12 @@ body {
   .profile-picture {
     height: 150px;
     width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .text-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 20px;
     color: #e2e2e2ba;
     font-family: "Caveat", cursive;
